@@ -15,9 +15,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libtinfo5 libncurses5 libstdc++6 zip unzip
 
-      - name: Accept Android SDK Licenses
-        run: yes | sdkmanager --licenses
-
       - name: Build APK
         uses: digreatbrian/buildozer-action@v2
         with:
