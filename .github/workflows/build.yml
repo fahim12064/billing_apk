@@ -30,7 +30,6 @@ jobs:
         key: buildozer-${{ runner.os }}-${{ hashFiles('buildozer.spec') }}
     - run: |
         export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-        sudo update-java-alternatives --set ${JAVA_HOME}
         export PATH=$JAVA_HOME/bin:$PATH
     - run: |
         mkdir -p ~/.buildozer/android/platform/android-sdk/licenses
