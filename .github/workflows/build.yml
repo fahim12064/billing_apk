@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libtinfo6 libncurses5 libstdc++6 unzip zip
+          sudo apt-get install -y libtinfo6 libstdc++6 zip unzip
 
       - name: Build APK
         uses: digreatbrian/buildozer-action@v2
